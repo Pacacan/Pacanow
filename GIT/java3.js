@@ -16,3 +16,5 @@ for(let i = num; i > 0; i--)
  console.log(parseFloat(f_text));
  console.log(parseFloat(f_text) + float);
  console.log(f_text + float);
+
+ 
