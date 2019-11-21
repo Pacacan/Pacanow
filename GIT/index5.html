@@ -8,38 +8,56 @@
     <style>
     table {
         border: 3px #000 solid;
-        font-size: 45px;
+        font-size: 10px;
         width: 75%;
         margin: auto;
+        border-collapse: collapse;
     }
-    tr td{
-        height: 60px;
+    tr{
+        height: 200px;
+    }
+    tbody tr:nth-child(odd) {
+        background-color: #999;
+    }
+    tbody tr td:first-child {
+        text-align: right;
+    }
+    thead{
+        background-color: #000;
+        color: #fff;
+    }
+    td{
         padding: 5px;
-        border: 1px;
+        border: 2px solid #000000;
+        vertical-align: top;
     }
-    table tbody tr:nth-child(even) {
-        background-color: #aaa;
-    }
-    table tbody tr:nth-child(odd){
-        background-color: blue;
-    }
+
     </style>
 </head>
 <body>
 <table>
     <thead>
-        <tr rowspan="2"></tr>
-        <th colspan="2"></th>
+        <tr>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi fugiat officia, sint at, alias quam, odit dolore iste laboriosam reprehenderit modi reiciendis autem nam doloremque harum nulla consequuntur enim.</td><br>
+            <td colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi fugiat officia, sint at, alias quam, odit dolore iste laboriosam reprehenderit modi reiciendis autem nam doloremque harum nulla consequuntur enim.</td><br>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi fugiat officia, sint at, alias quam, odit dolore iste laboriosam reprehenderit modi reiciendis autem nam doloremque harum nulla consequuntur enim.</td><br>
+        </tr>
+        
     </thead>
     <tbody>
        <tr>
-           <td>1</td>
-           <td>2</td>
+           <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate quaerat consequuntur possimus consectetur adipisci, quasi laborum quis accusamus soluta. Quae adipisci rerum ullam numquam odio voluptates. Ab, nobis vero.</td>
+           <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate quaerat consequuntur possimus consectetur adipisci, quasi laborum quis accusamus soluta. Quae adipisci rerum ullam numquam odio voluptates. Ab, nobis vero.</td>
+           <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut exercitationem quod deserunt laborum iusto, suscipit doloribus recusandae vel illo odio, natus dolorem eius asperiores molestias maxime mollitia praesentium animi velit?</td>
+           <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut exercitationem quod deserunt laborum iusto, suscipit doloribus recusandae vel illo odio, natus dolorem eius asperiores molestias maxime mollitia praesentium animi velit?</td>
        </tr>
        <tr>
-           <td>3</td>
-           <td>4</td>
-       </tr>
+           <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quidem nostrum quod adipisci, necessitatibus tempore quibusdam? Consequatur maiores amet blanditiis saepe quod quia aperiam accusamus qui sed magnam? Totam, iure!</td>
+           <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quidem nostrum quod adipisci, necessitatibus tempore quibusdam? Consequatur maiores amet blanditiis saepe quod quia aperiam accusamus qui sed magnam? Totam, iure!</td>
+           <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quidem nostrum quod adipisci, necessitatibus tempore quibusdam? Consequatur maiores amet blanditiis saepe quod quia aperiam accusamus qui sed magnam? Totam, iure!</td>
+           <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quidem nostrum quod adipisci, necessitatibus tempore quibusdam? Consequatur maiores amet blanditiis saepe quod quia aperiam accusamus qui sed magnam? Totam, iure!</td>
+
+        </tr>
 
     </tbody>
 </table>
